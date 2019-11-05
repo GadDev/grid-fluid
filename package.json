@@ -20,7 +20,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["./node_modules/.bin/eslint --fix", "git add"]
+    "*.js": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "eslint": "^6.6.0",
+    "eslint-plugin-jest": "^23.0.2",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9"
   }
