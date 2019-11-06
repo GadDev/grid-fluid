@@ -16,7 +16,27 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+main {
+  display: flex;
+}
 
-.App-link {
-  color: #09d3ac;
+.story-list__wrapper{
+  max-width: 100%;
+  margin: auto;
+}
+
+.story-list__wrapper ul {
+  display: grid;
+  grid-template-columns: 12% 12% 12% 12% 12% 12% 12% 12%;
+  grid-template-rows: 100px;
+  grid-gap: 0.225%;
+  list-style: none;
+  transition: all 1s;
+
+}
+
+.story-list__wrapper li {
+  background: #eee;
+  padding: 0.3rem;
+  transition: all 1s;
 }
