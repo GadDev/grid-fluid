@@ -1,5 +1,6 @@
 {
   "name": "grid-secret",
+  "homepage": "http://gaddev.github.io/grid-fluid",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretest": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
@@ -45,6 +47,7 @@
     "eslint": "^6.6.0",
     "eslint-plugin-jest": "^23.0.2",
     "eslint-plugin-react": "^7.16.0",
+    "gh-pages": "^2.1.1",
     "husky": "^3.0.9"
   }
 }

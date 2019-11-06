@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 import './App.css';
 
 
 
 function Story({ story }) {
     const [isExpand, setIsExpand] = useState(false);
-    const { id, gridColumnStart, gridRowStart, url, title } = story;
+    const { by, score, id, gridColumnStart, gridRowStart, url, title } = story;
 
     const styleExpand = {
         gridColumnStart: `${gridColumnStart}`,
@@ -14,21 +15,37 @@ function Story({ story }) {
         gridRowStart: `${gridRowStart}`,
         gridRowEnd: `${gridRowStart + 2}`
     }
+
+    const classStory = classnames({
+        story: true,
+        [`column-start-${gridColumnStart}`]: true,
+        [`row-start-${gridRowStart}`]: true,
+        expand: isExpand
+    })
     function expandCell(){
         console.log('click')
         setIsExpand(!isExpand);
     }
 
     return (
-        <li onClick={expandCell} key={id} className={`column-start-${gridColumnStart} row-start-${gridRowStart}`} style={isExpand ? styleExpand : {}}>
-            <a href={url}>{title}</a>
+        <li onClick={expandCell} key={id} className={classStory} style={isExpand ? styleExpand : {}}>
+            
+            <article>
+                <h5>{title}</h5>
+                <small>By {by}</small>
+                <p>
+                    <strong>Score {score}</strong>
+                    <a href={url}>Read more</a>
+                </p>
+                
+            </article>
         </li>
     );
 }
 
 function HackerStoryTiles({ stories }) {
     if (stories.length === 0) {
-        return <div>Loading stories...</div>;
+        return <div className="loading-block">Loading stories...</div>;
     }
 
     return (
@@ -116,6 +133,8 @@ HackerStoryTiles.defaultProps = {
 
 Story.propTypes = {
     story: PropTypes.shape({
+        by: PropTypes.string,
+        score: PropTypes.string,
         id: PropTypes.number,
         gridColumnStart: PropTypes.number,
         gridRowStart: PropTypes.number,
