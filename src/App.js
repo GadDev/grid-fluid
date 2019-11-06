@@ -23,7 +23,6 @@ function Story({ story }) {
         expand: isExpand
     })
     function expandCell(){
-        console.log('click')
         setIsExpand(!isExpand);
     }
 
@@ -100,7 +99,6 @@ function App() {
                 acc.push(story)
                 return acc;
             }, []);
-            console.log(reducer)
             setStories(reducer);
           } catch (err) {
             console.error(err);
