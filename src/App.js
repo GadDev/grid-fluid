@@ -35,7 +35,7 @@ function Story({ story }) {
                 <small>By {by}</small>
                 <p>
                     <strong>Score {score}</strong>
-                    <a href={url}>Read more</a>
+                    <a href={url} target="_blank" rel="noopener noreferrer">Read more</a>
                 </p>
                 
             </article>
