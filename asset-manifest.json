@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/grid-fluid/static/css/main.9d43e131.chunk.css",
-    "main.js": "/grid-fluid/static/js/main.7db1b8be.chunk.js",
-    "main.js.map": "/grid-fluid/static/js/main.7db1b8be.chunk.js.map",
+    "main.css": "/grid-fluid/static/css/main.355c306f.chunk.css",
+    "main.js": "/grid-fluid/static/js/main.3fb97f65.chunk.js",
+    "main.js.map": "/grid-fluid/static/js/main.3fb97f65.chunk.js.map",
     "runtime-main.js": "/grid-fluid/static/js/runtime-main.2e465e1a.js",
     "runtime-main.js.map": "/grid-fluid/static/js/runtime-main.2e465e1a.js.map",
     "static/js/2.9a17625e.chunk.js": "/grid-fluid/static/js/2.9a17625e.chunk.js",
     "static/js/2.9a17625e.chunk.js.map": "/grid-fluid/static/js/2.9a17625e.chunk.js.map",
     "index.html": "/grid-fluid/index.html",
-    "precache-manifest.911d4b804062aabe9a013bf93e06c44d.js": "/grid-fluid/precache-manifest.911d4b804062aabe9a013bf93e06c44d.js",
+    "precache-manifest.650c1cd8b05073232ca2f774f74a39cb.js": "/grid-fluid/precache-manifest.650c1cd8b05073232ca2f774f74a39cb.js",
     "service-worker.js": "/grid-fluid/service-worker.js",
-    "static/css/main.9d43e131.chunk.css.map": "/grid-fluid/static/css/main.9d43e131.chunk.css.map"
+    "static/css/main.355c306f.chunk.css.map": "/grid-fluid/static/css/main.355c306f.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.2e465e1a.js",
     "static/js/2.9a17625e.chunk.js",
-    "static/css/main.9d43e131.chunk.css",
-    "static/js/main.7db1b8be.chunk.js"
+    "static/css/main.355c306f.chunk.css",
+    "static/js/main.3fb97f65.chunk.js"
   ]
 }
