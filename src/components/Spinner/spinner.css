@@ -1,0 +1,45 @@
+.spinner {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .pulse-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 2.5rem;
+  }
+  
+  .pulse-bubble {
+    background-color: var(--color-grey);
+    border-radius: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+  
+  .pulse-bubble-1 {
+    animation: pulse 0.4s ease 0s infinite alternate;
+  }
+  
+  .pulse-bubble-2 {
+    animation: pulse 0.4s ease 0.2s infinite alternate;
+  }
+  
+  .pulse-bubble-3 {
+    animation: pulse 0.4s ease 0.4s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.25;
+      transform: scale(0.75);
+    }
+  }
+  

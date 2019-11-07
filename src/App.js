@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import './App.css';
 
-
-
+import Spinner from './components/Spinner';
 function Story({ story }) {
     const [isExpand, setIsExpand] = useState(false);
     const { by, score, id, gridColumnStart, gridRowStart, url, title } = story;
@@ -44,12 +43,11 @@ function Story({ story }) {
 
 function HackerStoryTiles({ stories }) {
     if (stories.length === 0) {
-        return <div className="loading-block">Loading stories...</div>;
+        return <div className="loading-block"><Spinner /></div>;
     }
 
     return (
         <div className="story-list__wrapper">
-            <h1>HackerNews Top 500 stories</h1>
             <ul>
                 {stories.map(story => {
 
