@@ -29,10 +29,11 @@ function Story({ story }) {
         <li onClick={expandCell} key={id} className={classStory} style={isExpand ? styleExpand : {}}>
             
             <article>
+                <div className="score"> {score}</div>
                 <h5>{title}</h5>
                 <small>By {by}</small>
                 <p>
-                    <strong>Score {score}</strong>
+                    
                     <a href={url} target="_blank" rel="noopener noreferrer">Read more</a>
                 </p>
                 
